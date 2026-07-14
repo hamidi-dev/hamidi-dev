@@ -1,0 +1,57 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      # Render the cards to SVGs committed in this repo. Hotlinking the Vercel
+      # instance directly makes the profile show broken "Maximum retries
+      # exceeded" cards whenever it is rate-limited; a stale card beats that.
+      - name: Render stat cards
+        run: |
+          set -euo pipefail
+          mkdir -p profile
+          opts="username=hamidi-dev&theme=transparent&hide_border=true&title_color=58a6ff&text_color=768390&icon_color=58a6ff"
+
+          render() {
+            name=$1 url=$2
+            if ! curl -fsSL --retry 5 --retry-all-errors --retry-delay 10 \
+                 "$url" -o "profile/$name.svg.new"; then
+              echo "::warning::$name: request failed, keeping previous card"
+              rm -f "profile/$name.svg.new"
+              return
+            fi
+            # The API answers 200 with an "error card" SVG when it is unhappy.
+            if ! head -c 200 "profile/$name.svg.new" | grep -q '<svg' \
+               || grep -qi 'Something went wrong' "profile/$name.svg.new"; then
+              echo "::warning::$name: error card returned, keeping previous card"
+              rm -f "profile/$name.svg.new"
+              return
+            fi
+            mv "profile/$name.svg.new" "profile/$name.svg"
+          }
+
+          render stats \
+            "https://github-readme-stats.vercel.app/api?${opts}&show_icons=true&include_all_commits=true&rank_icon=github"
+          render top-langs \
+            "https://github-readme-stats.vercel.app/api/top-langs?${opts}&layout=compact&langs_count=8"
+
+      - name: Commit
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile
+          git diff --staged --quiet || git commit -m "chore: update profile stats"
+          git push
