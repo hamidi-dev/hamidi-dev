@@ -1,6 +1,6 @@
 ## Hi, I'm Mo 👋
 
-I build things for people who live in their editor and their terminal —
+I build things for people who live in their terminal —
 Neovim and org-mode plugins, and lately tooling for the age of AI coding agents.
 
 ### 🔨 Building
