@@ -9,5 +9,5 @@
   <text x="0" y="52" class="stat">Total stars earned</text><text x="260" y="52" class="val">178</text>
   <text x="0" y="76" class="stat">Public repositories</text><text x="260" y="76" class="val">10</text>
   <text x="0" y="100" class="stat">Commits (past year)</text><text x="260" y="100" class="val">411</text>
-  <text x="0" y="124" class="stat">Pull requests (past year)</text><text x="260" y="124" class="val">45</text>
+  <text x="0" y="124" class="stat">Pull requests (past year)</text><text x="260" y="124" class="val">46</text>
 </svg>
