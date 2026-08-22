@@ -5,7 +5,7 @@ Neovim and org-mode plugins, and lately tooling for the age of AI coding agents.
 
 ### 🔨 Building
 
-- **[opentab](https://github.com/hamidi-dev/opentab)** — browse your AI coding spend in the terminal AND in the web browser. OpenCode, Claude Code, Codex & more.
+- **[opentab](https://github.com/hamidi-dev/opentab)** — browse your AI coding spend in the terminal and in the web browser. OpenCode, Claude Code, Codex & more.
 - **[gitrivia](https://github.com/hamidi-dev/gitrivia)** — git forensics: uncover your repo's structure and secrets.
 
 ### 🌱 Neovim & org-mode
