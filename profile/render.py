@@ -103,7 +103,7 @@ def stats_card(user):
         f'<text x="260" y="{52 + i * 24}" class="val">{value}</text>'
         for i, (label, value) in enumerate(rows)
     )
-    return card(320, 52 + len(rows) * 24, "Mo's GitHub stats", body)
+    return card(320, 52 + len(rows) * 24, "GitHub stats", body)
 
 
 def langs_card(user, top=6):
