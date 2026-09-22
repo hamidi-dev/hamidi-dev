@@ -15,6 +15,7 @@ Neovim and org-mode plugins, and lately tooling for the age of AI coding agents.
 - **[org-list.nvim](https://github.com/hamidi-dev/org-list.nvim)**: toggle between different kinds of lists.
 - **[kaleidosearch.nvim](https://github.com/hamidi-dev/kaleidosearch.nvim)**: colorize multiple search terms in distinct colors.
 - **[json-kit.nvim](https://github.com/hamidi-dev/json-kit.nvim)**: format and sort JSON, extract it from logs, inspect JWTs, and copy JSONPaths.
+- **[play.nvim](https://github.com/hamidi-dev/play.nvim)**: run files and code blocks, preview diagrams, and choose contextual actions with one key.
 
 ### Git
 
