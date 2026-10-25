@@ -6,8 +6,8 @@
     .val   { font: 600 13px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #58a6ff; }
   </style>
   <text x="0" y="20" class="title">Most used languages</text>
-  <rect x="0.0" y="34" width="267.2" height="8" rx="2" fill="#3572A5"/>
-  <rect x="267.2" y="34" width="20.4" height="8" rx="2" fill="#5a5aad"/>
+  <rect x="0.0" y="34" width="267.3" height="8" rx="2" fill="#3572A5"/>
+  <rect x="267.3" y="34" width="20.3" height="8" rx="2" fill="#5a5aad"/>
   <rect x="287.6" y="34" width="4.2" height="8" rx="2" fill="#e34c26"/>
   <rect x="291.8" y="34" width="3.7" height="8" rx="2" fill="#f1e05a"/>
   <rect x="295.4" y="34" width="3.4" height="8" rx="2" fill="#dea584"/>
