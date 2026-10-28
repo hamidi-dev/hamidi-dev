@@ -6,14 +6,14 @@
     .val   { font: 600 13px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #58a6ff; }
   </style>
   <text x="0" y="20" class="title">Most used languages</text>
-  <rect x="0.0" y="34" width="267.7" height="8" rx="2" fill="#3572A5"/>
-  <rect x="267.7" y="34" width="20.1" height="8" rx="2" fill="#5a5aad"/>
-  <rect x="287.7" y="34" width="4.1" height="8" rx="2" fill="#e34c26"/>
+  <rect x="0.0" y="34" width="268.0" height="8" rx="2" fill="#3572A5"/>
+  <rect x="268.0" y="34" width="19.9" height="8" rx="2" fill="#5a5aad"/>
+  <rect x="287.9" y="34" width="4.1" height="8" rx="2" fill="#e34c26"/>
   <rect x="291.9" y="34" width="3.6" height="8" rx="2" fill="#f1e05a"/>
-  <rect x="295.5" y="34" width="3.4" height="8" rx="2" fill="#dea584"/>
+  <rect x="295.5" y="34" width="3.3" height="8" rx="2" fill="#dea584"/>
   <rect x="298.9" y="34" width="1.1" height="8" rx="2" fill="#89e051"/>
-  <circle cx="5" cy="64" r="5" fill="#3572A5"/><text x="16" y="68" class="stat">Python 89.2%</text>
-  <circle cx="160" cy="64" r="5" fill="#5a5aad"/><text x="171" y="68" class="stat">Lua 6.7%</text>
+  <circle cx="5" cy="64" r="5" fill="#3572A5"/><text x="16" y="68" class="stat">Python 89.3%</text>
+  <circle cx="160" cy="64" r="5" fill="#5a5aad"/><text x="171" y="68" class="stat">Lua 6.6%</text>
   <circle cx="5" cy="86" r="5" fill="#e34c26"/><text x="16" y="90" class="stat">HTML 1.4%</text>
   <circle cx="160" cy="86" r="5" fill="#f1e05a"/><text x="171" y="90" class="stat">JavaScript 1.2%</text>
   <circle cx="5" cy="108" r="5" fill="#dea584"/><text x="16" y="112" class="stat">Rust 1.1%</text>
